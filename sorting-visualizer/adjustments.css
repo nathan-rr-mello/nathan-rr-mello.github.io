@@ -1,0 +1,46 @@
+img, svg{
+    vertical-align: -.125em;
+}
+
+.bar{
+    background-color: #0d6efd;
+    border-radius: 10px;
+    transition: height 100ms ease-in-out;
+}
+
+.btn-outline-success{
+    --bs-btn-color: var(--bs-teal);
+    --bs-btn-border-color: var(--bs-teal);
+    --bs-btn-hover-bg: var(--bs-teal);
+    --bs-btn-hover-border-color: var(--bs-teal);
+    --bs-btn-active-bg: var(--bs-teal);
+    --bs-btn-active-border-color: var(--bs-teal);
+    --bs-btn-disabled-color: var(--bs-teal);
+    --bs-btn-disabled-border-color: var(--bs-teal);
+}
+
+.dark{
+    --bg-dark-color: #6610f2;
+    --bg-dark-color-hover: hsl(263, 90%, 41%); 
+    background-color: var(--bg-dark-color);
+    --bs-btn-bg: var(--bg-dark-color);
+    --bs-btn-border-color: var(--bg-dark-color);
+    --bs-btn-hover-bg: var(--bg-dark-color-hover); 
+    --bs-btn-hover-border-color: var(--bg-dark-color-hover);
+    --bs-btn-active-bg: var(--bg-dark-color-hover);
+    --bs-btn-active-border-color: #4e11b0;
+    --bs-btn-disabled-bg: var(--bg-dark-color);
+    --bs-btn-disabled-border-color: var(--bg-dark-color);
+}
+
+.bar.selected{
+    background-color: crimson;
+}
+
+.bar.selected.bigger{
+    background-color: springgreen;
+}
+
+.bar.sorted{
+    background-color: springgreen;
+}
