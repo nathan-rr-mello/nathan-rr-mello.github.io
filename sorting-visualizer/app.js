@@ -126,12 +126,15 @@ sortBtn.addEventListener("click", () => {
     dropdownList.forEach(x => x.hide())
     sortBtnFunc();
 })
+
 bottomRandBtn.addEventListener("click", randBtnFunc)
+
+const collapseElementList = document.querySelectorAll('.collapse')
+const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl, {toggle: false}))
+
 bottomSortBtn.addEventListener("click", () => {
-    const collapseElementList = document.querySelectorAll('.collapse')
-    const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
-    sortBtnFunc();
     collapseList.forEach(x => x.hide())
+    sortBtnFunc();
 })
 
 const darkmodeBtn = document.getElementById("dark-mode-btn");
@@ -141,7 +144,6 @@ const moonSvg = document.getElementById("dark-svg-moon")
 const sunSvg = document.getElementById("light-svg-sun")
 
 darkmodeBtn.addEventListener("click", () => {
-
     darkmode = !darkmode;
     darkmodeBtn.classList.toggle("dark")
     bottomRandBtn.classList.toggle("dark")
